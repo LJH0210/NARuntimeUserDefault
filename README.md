@@ -3,7 +3,7 @@ How to Use
 1、inherit NAUserDefaults first
 
 <pre><code>
-/#import "NAUserDefaults.h"  
+\#import "NAUserDefaults.h"  
 @interface HYUserDefaults : NAUserDefaults  
 @property (retain,nonatomic) NSString *testString;  
 + (HYUserDefaults *)shareInstance;  
@@ -11,7 +11,7 @@ How to Use
 </pre></code>
 
 <pre><code>
-/#import "HYUserDefaults.h"  
+\#import "HYUserDefaults.h"  
 static HYUserDefaults *instance;  
 @implementation HYUserDefaults  
 + (HYUserDefaults *)shareInstance{  
