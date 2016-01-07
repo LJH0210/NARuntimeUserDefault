@@ -6,7 +6,7 @@ How to Use
 \#import "NAUserDefaults.h"  
 @interface HYUserDefaults : NAUserDefaults  
 @property (retain,nonatomic) NSString *testString;  
-+ (HYUserDefaults *)shareInstance;  
+\+ (HYUserDefaults *)shareInstance;  
 @end  
 </pre></code>
 
@@ -14,7 +14,7 @@ How to Use
 \#import "HYUserDefaults.h"  
 static HYUserDefaults *instance;  
 @implementation HYUserDefaults  
-+ (HYUserDefaults *)shareInstance{  
+\+ (HYUserDefaults *)shareInstance{  
     static dispatch_once_t onceToken;  
     dispatch_once(&onceToken, ^{  
         instance = [HYUserDefaults new];  
